@@ -15,6 +15,15 @@ Person::Person(int a){
 	age = a;
 	}
  
+int Person::fib(){
+	return fib_helpf(getAge());
+	}
+
+int Person::fib_helpf(int n){
+	if(n<=1){return n;}
+	return fib_helpf(n-1) + fib_helpf(n-2);
+	}
+
 int Person::getAge(){
 	return age;
 	}
@@ -31,6 +40,7 @@ double Person::getDecades(){
 extern "C"{
 	Person* Person_new(int a) {return new Person(a);}
 	int Person_getAge(Person* person) {return person->getAge();}
+	int Person_fib(Person* person){return person->fib();}
 	void Person_setAge(Person* person, int a) {person->setAge(a);}
 	double Person_getDecades(Person* person) {return person->getDecades();}
 	void Person_delete(Person* person){
