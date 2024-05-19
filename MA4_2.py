@@ -46,8 +46,10 @@ def compare():
 		pyplot.plot(n, y_c, "b", label ="C++")
 		pyplot.yscale('log')
 		pyplot.xlabel("n")
-
+		pyplot.ylabel("Time(s)")
+		pyplot.savefig("30_45fib.png")
 def main():
+	compare
 	if False:
 		f = Person(50)
 		print(f.getAge())
