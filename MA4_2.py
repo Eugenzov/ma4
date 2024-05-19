@@ -22,7 +22,7 @@ def fib_numba(n):
 def compare():
 
 	if True: #plotta tiden för olika
-		n = range(30, 45)
+		n = range(30, 35)
 		y_py = []
 		y_numba = []
 		y_c = []
