@@ -19,10 +19,14 @@ def fib_numba(n):
 	else:
 		return fib_numba(n-1) + fib_numba(n-2)
 
+def n_47():
+	fib_numba(47)
+	
+
 def compare():
 
 	if True: #plotta tiden för olika
-		n = range(30, 35)
+		n = range(30, 45)
 		y_py = []
 		y_numba = []
 		y_c = []
