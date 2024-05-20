@@ -41,7 +41,7 @@ def compare():
 			fib_py(i)
 			t1 = pc()
 			fib_numba(i)
-			t2 = pc()s
+			t2 = pc()
 			f.fib()
 			t3 = pc()
 					
