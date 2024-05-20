@@ -20,7 +20,11 @@ def fib_numba(n):
 		return fib_numba(n-1) + fib_numba(n-2)
 
 def n_47():
-	fib_numba(47)
+    f = Person(47)
+    print(f.fib())
+    fib_numba(2)
+    print(fib_numba(47))
+
 	
 
 def compare():
@@ -37,7 +41,7 @@ def compare():
 			fib_py(i)
 			t1 = pc()
 			fib_numba(i)
-			t2 = pc()
+			t2 = pc()s
 			f.fib()
 			t3 = pc()
 					
