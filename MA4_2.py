@@ -57,7 +57,7 @@ def compare():
 		pyplot.ylabel("Time(s)")
 		pyplot.savefig("30_45fib.png")
 def main():
-	compare()
+	n_47()
 	if False:
 		f = Person(50)
 		print(f.getAge())
